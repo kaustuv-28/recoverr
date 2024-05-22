@@ -1,6 +1,6 @@
-# Recover
+# Recoverr
 
-Recover is a Flutter mobile application designed to help users manage lost and found items. This project leverages a tech stack consisting of Dart for Flutter, C++ for performance-critical components, and Python for backend services and machine learning.
+Recoverr is a Flutter mobile application designed to help users manage lost and found items. This project leverages a tech stack consisting of Dart for Flutter, C++ for performance-critical components, and Python for backend services and machine learning.
 
 ## Table of Contents
 
@@ -28,43 +28,43 @@ Recover is a Flutter mobile application designed to help users manage lost and f
 ## Overview of the project
 
 **Sign Up**
-![sign up](https://github.com/Ankit-Ransh/Recover/assets/98517507/d3e0da90-96a0-4fa7-ba19-d085a155acc3)
+![sign up](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/d3e0da90-96a0-4fa7-ba19-d085a155acc3)
 
 **Login**
-![login](https://github.com/Ankit-Ransh/Recover/assets/98517507/344a61e8-3bba-4571-b9d9-94fb656a881f)
+![login](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/344a61e8-3bba-4571-b9d9-94fb656a881f)
 
 **Home Page**
-![home](https://github.com/Ankit-Ransh/Recover/assets/98517507/fbb8da71-1828-4973-b8ff-ddf19d7e12dd)
+![home](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/fbb8da71-1828-4973-b8ff-ddf19d7e12dd)
 
 **Information Brochure**
-![information](https://github.com/Ankit-Ransh/Recover/assets/98517507/94a25bec-3f98-4346-b7b3-49dce63a12ab)
+![information](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/94a25bec-3f98-4346-b7b3-49dce63a12ab)
 
 **Report Item**
-![report userflow](https://github.com/Ankit-Ransh/Recover/assets/98517507/e08b6ca3-00b3-494f-b239-e432c44dca42)
+![report userflow](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/e08b6ca3-00b3-494f-b239-e432c44dca42)
 
 **Report Lost Items**
-![lost page](https://github.com/Ankit-Ransh/Recover/assets/98517507/d836f048-d27f-4dda-9adf-d118d0c8e1a8)
+![lost page](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/d836f048-d27f-4dda-9adf-d118d0c8e1a8)
 
 **Report Found Items**
-![found](https://github.com/Ankit-Ransh/Recover/assets/98517507/eeef2193-9dac-4917-9228-d6ef21b0ec63)
+![found](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/eeef2193-9dac-4917-9228-d6ef21b0ec63)
 
 **Successfully Reported Status**
-<img width="356" alt="found motivation" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/ef949a9c-69c7-49ae-9d20-599f154afbdd">
+<img width="356" alt="found motivation" src="https://github.com/Ankit-Ransh/Recoverr/assets/98517507/ef949a9c-69c7-49ae-9d20-599f154afbdd">
 
 **Last Reported Items**
-<img width="356" alt="last reported" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/202e1048-8303-4566-9ab4-7a7735128fb7">
+<img width="356" alt="last reported" src="https://github.com/Ankit-Ransh/Recoverr/assets/98517507/202e1048-8303-4566-9ab4-7a7735128fb7">
 
 **Browse Tab**
-![browse item](https://github.com/Ankit-Ransh/Recover/assets/98517507/a20d2adc-0c43-4dde-aa57-0319ab6f90e7)
+![browse item](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/a20d2adc-0c43-4dde-aa57-0319ab6f90e7)
 
 **My Items**
-![personal item page](https://github.com/Ankit-Ransh/Recover/assets/98517507/9149777a-dece-4191-bfe7-c0ca75622704)
+![personal item page](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/9149777a-dece-4191-bfe7-c0ca75622704)
 
 **Users List**
-![message](https://github.com/Ankit-Ransh/Recover/assets/98517507/ffc90137-44cd-4058-acb0-2f21488292f1)
+![message](https://github.com/Ankit-Ransh/Recoverr/assets/98517507/ffc90137-44cd-4058-acb0-2f21488292f1)
 
 **Sample Chat**
-<img width="355" alt="Screenshot 2024-05-16 at 5 57 24 PM" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/8e01cb7e-1976-4a85-bfab-36ddd4e3ebc8">
+<img width="355" alt="Screenshot 2024-05-16 at 5 57 24 PM" src="https://github.com/Ankit-Ransh/Recoverr/assets/98517507/8e01cb7e-1976-4a85-bfab-36ddd4e3ebc8">
 
 
 ## Tech Stack
@@ -85,8 +85,8 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-1. Clone the repository ```git clone https://github.com/Ankit-Ransh/Recover.git ```
-2. Open flutter repository ```cd Recover/lost_found ```
+1. Clone the repository ```git clone https://github.com/kaustuv-28/recoverr.git ```
+2. Open flutter repository ```cd recoverr ```
 3. Install Flutter dependencies ``` flutter pub get ```
 4. Set up the Python environment ``` pip install -r requirements.txt ``` 
 
