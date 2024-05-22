@@ -23,29 +23,28 @@ Cross-Platform: Built with Flutter, the app supports both iOS and Android platfo
 Overview of the project
 Sign Up sign up
 
-Login login
+Login 
 
-Home Page home
+Home Page 
 
-Information Brochure information
+Information Brochure 
 
-Report Item report userflow
+Report Item report 
 
-Report Lost Items lost page
+Report Lost Items
 
-Report Found Items found
+Report Found Items
 
-Successfully Reported Status found motivation
+Successfully Reported Status 
 
-Last Reported Items last reported
+Last Reported Items 
 
-Browse Tab browse item
+Browse Tab 
 
-My Items personal item page
+My Items 
 
-Users List message
+Users List 
 
-Sample Chat Screenshot 2024-05-16 at 5 57 24 PM
 
 Tech Stack
 Frontend: Flutter (Dart)
