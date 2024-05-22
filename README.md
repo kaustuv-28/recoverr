@@ -7,7 +7,9 @@ Installation
 Usage
 Contributing
 License
-Features
+
+
+##Features
 User Registration and Login: The app offers secure user authentication and management, ensuring that only registered users can post or search for lost and found items. User data is securely stored, and authentication is managed using modern encryption standards to protect user information.
 
 Lost and Found Listings: Users can easily create posts for lost or found items by providing details such as item description, location, and basic information. These listings are categorized and can be browsed by other users, making it simple to search for or report items.
@@ -21,7 +23,8 @@ Machine Learning: The app integrates Python-based machine learning models to enh
 Cross-Platform: Built with Flutter, the app supports both iOS and Android platforms, providing a seamless and consistent user experience across devices. This cross-platform compatibility ensures that a wider audience can access and benefit from the app, regardless of their device preference.
 
 Overview of the project
-Sign Up sign up
+
+Sign Up
 
 Login 
 
@@ -50,6 +53,8 @@ Tech Stack
 Frontend: Flutter (Dart)
 Backend: Python
 Performance: C++
+
+
 Installation
 To get a local copy up and running, follow these steps.
 
