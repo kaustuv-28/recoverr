@@ -1,110 +1,87 @@
-# Recover
+## Getting Started
 
-Recover is a Flutter mobile application designed to help users manage lost and found items. This project leverages a tech stack consisting of Dart for Flutter, C++ for performance-critical components, and Python for backend services and machine learning.
+This project is a starting point for a Flutter application. The app follows a modular architecture pattern, allowing for better organization of code and easier maintenance and scalability. It separates concerns into different layers such as presentation, domain, and data layers, facilitating a clear separation of responsibilities.
 
-## Table of Contents
+The presentation layer consists of UI components, including widgets, screens, and navigation logic. It's responsible for rendering the user interface and handling user interactions.
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+The domain layer contains business logic and use cases, defining the core functionality of the app independently of any specific UI framework. It encapsulates the app's business rules and domain models, promoting code reusability and testability.
 
-## Features
+The data layer handles data retrieval and manipulation, interacting with external data sources such as databases, APIs, or local storage. In this project, the backend is built on Supabase, a powerful platform that provides authentication, real-time database, and file storage services out of the box.
 
-- **User Registration and Login**: The app offers secure user authentication and management, ensuring that only registered users can post or search for lost and found items. User data is securely stored, and authentication is managed using modern encryption standards to protect user information.
+## Folder Architecture
 
-- **Lost and Found Listings**: Users can easily create posts for lost or found items by providing details such as item description, location, and basic information. These listings are categorized and can be browsed by other users, making it simple to search for or report items.
+|-- data <br/>
+&nbsp; &nbsp; &nbsp;  |-- datasources <br/>
+&nbsp; &nbsp; &nbsp;  |-- models <br/>
+&nbsp; &nbsp; &nbsp;  |-- repository <br/>
+|-- domain <br/>
+&nbsp; &nbsp; &nbsp;  |-- entities <br/>
+&nbsp; &nbsp; &nbsp;  |-- repository <br/>
+&nbsp; &nbsp; &nbsp;  |-- usecases <br/>
+|-- presentation <br/>
+&nbsp; &nbsp; &nbsp;  |-- bloc <br/>
+&nbsp; &nbsp; &nbsp;  |-- pages <br/>
+&nbsp; &nbsp; &nbsp;  |-- widgets <br/>
 
-- **Search Functionality**: The advanced search functionality allows users to quickly find lost and found items using various filters such as item name and item description. This feature is designed to help users navigate through listings efficiently and find relevant items with ease.
+## Architecture
+<img width="742" alt="Screenshot 2024-05-01 at 1 52 57 PM" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/bf8833b8-855c-44c5-9c12-1ed2c9d9ff7c">
 
-- **Realtime Chat**: Users can communicate with each other in real-time through a built-in chat feature. This allows users to discuss details about lost and found items, coordinate meetups for item exchanges, or ask questions about listings directly within the app. The chat feature enhances user engagement and facilitates quicker resolution of lost and found cases.
+## Database Schema
+<img width="821" alt="Screenshot 2024-05-01 at 8 12 36 PM" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/6d3e7a4f-997e-481c-a36f-0464b9086354">
 
-- **Machine Learning**: The app integrates Python-based machine learning models to enhance the matching process for lost and found items. By analyzing item descriptions and images, the ML models can suggest potential matches, significantly improving the chances of finding lost items. This automated matching process saves users time and effort.
+## Setting Up Supabase Backend
 
-- **Cross-Platform**: Built with Flutter, the app supports both iOS and Android platforms, providing a seamless and consistent user experience across devices. This cross-platform compatibility ensures that a wider audience can access and benefit from the app, regardless of their device preference.
+To set up the backend using Supabase for your Flutter project, follow these steps:
 
+1. **Create a Supabase Account**: If you haven't already, sign up for a Supabase account at [Supabase.io](https://supabase.io/).
 
-## Overview of the project
+2. **Create a New Project**: Once logged in to your Supabase account, create a new project. This will give you access to your project's URL and API keys.
 
-**Sign Up**
-![sign up](https://github.com/Ankit-Ransh/Recover/assets/98517507/d3e0da90-96a0-4fa7-ba19-d085a155acc3)
+3. **Set Up Database**: Within your Supabase project, navigate to the "Database" tab and create a new database. Define your database schema, including tables for managing lost and found items.
 
-**Login**
-![login](https://github.com/Ankit-Ransh/Recover/assets/98517507/344a61e8-3bba-4571-b9d9-94fb656a881f)
+4. **Access API Keys**: Go to the "Settings" tab in your Supabase project to access your API keys. You'll need these keys to authenticate requests to your Supabase backend from your Flutter app.
 
-**Home Page**
-![home](https://github.com/Ankit-Ransh/Recover/assets/98517507/fbb8da71-1828-4973-b8ff-ddf19d7e12dd)
+5. **Integrate Supabase SDK**: In your Flutter project, add the Supabase Dart SDK as a dependency. Find the latest version and installation instructions on the [Supabase Dart SDK GitHub page](https://github.com/supabase/supabase-dart).
 
-**Information Brochure**
-![information](https://github.com/Ankit-Ransh/Recover/assets/98517507/94a25bec-3f98-4346-b7b3-49dce63a12ab)
+6. **Initialize Supabase Client**: Initialize the Supabase client in your Flutter app using your Supabase project URL and API keys. This will allow your app to communicate with the Supabase backend.
 
-**Report Item**
-![report userflow](https://github.com/Ankit-Ransh/Recover/assets/98517507/e08b6ca3-00b3-494f-b239-e432c44dca42)
+7. **Implement Backend Logic**: Use the Supabase SDK to implement backend logic in your Flutter app, such as CRUD operations for managing lost and found items. Utilize Supabase's authentication, database, and storage features for user authentication, data storage, and file uploads.
 
-**Report Lost Items**
-![lost page](https://github.com/Ankit-Ransh/Recover/assets/98517507/d836f048-d27f-4dda-9adf-d118d0c8e1a8)
+8. **Test and Deploy**: Test your app to ensure that the backend integration is working correctly. Once satisfied, deploy your Flutter app with the Supabase backend to production.
 
-**Report Found Items**
-![found](https://github.com/Ankit-Ransh/Recover/assets/98517507/eeef2193-9dac-4917-9228-d6ef21b0ec63)
-
-**Successfully Reported Status**
-<img width="356" alt="found motivation" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/ef949a9c-69c7-49ae-9d20-599f154afbdd">
-
-**Last Reported Items**
-<img width="356" alt="last reported" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/202e1048-8303-4566-9ab4-7a7735128fb7">
-
-**Browse Tab**
-![browse item](https://github.com/Ankit-Ransh/Recover/assets/98517507/a20d2adc-0c43-4dde-aa57-0319ab6f90e7)
-
-**My Items**
-![personal item page](https://github.com/Ankit-Ransh/Recover/assets/98517507/9149777a-dece-4191-bfe7-c0ca75622704)
-
-**Users List**
-![message](https://github.com/Ankit-Ransh/Recover/assets/98517507/ffc90137-44cd-4058-acb0-2f21488292f1)
-
-**Sample Chat**
-<img width="355" alt="Screenshot 2024-05-16 at 5 57 24 PM" src="https://github.com/Ankit-Ransh/Recover/assets/98517507/8e01cb7e-1976-4a85-bfab-36ddd4e3ebc8">
+## Create a secrets folder
+  Folder location ``` lib/core/secrets ```
+  Create a file ``` lib/core/secrets/supabase_secrets.dart ```
+  ```
+    class SupaBaseSecrets {
+      static const url = "";
+      static const anonKey = "";
+    }
+  ```
 
 
-## Tech Stack
+## State Management with BLoC
 
-- **Frontend**: Flutter (Dart)
-- **Backend**: Python
-- **Performance**: C++
+In this project, we utilize the BLoC (Business Logic Component) pattern for managing state in the presentation layer of our Flutter app. BLoC is a design pattern that separates business logic from UI components, allowing for better scalability, testability, and maintainability of the codebase.
 
-## Installation
+### What is BLoC?
 
-To get a local copy up and running, follow these steps.
+BLoC stands for Business Logic Component and is a design pattern introduced by Google that helps manage the state of a Flutter application in a reactive and efficient manner. It separates the presentation layer from business logic and state management, making the codebase more organized and easier to maintain.
 
-### Prerequisites
+### Why BLoC?
 
-- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
-- Python: [Install Python](https://www.python.org/downloads/)
-- C++ Compiler: Ensure you have a C++ compiler installed (e.g., GCC, Clang, MSVC)
+- **Separation of Concerns**: BLoC separates business logic and state management from the UI components, enabling better organization and maintainability of the codebase.
+  
+- **Reactive Programming**: BLoC utilizes streams and stream controllers to handle asynchronous data flow, allowing for reactive updates to the UI based on changes in the application state.
+  
+- **Testability**: BLoC makes it easier to write unit tests for business logic and state management, ensuring the reliability and correctness of the application.
 
-### Setup
+### How it Works
 
-1. Clone the repository ```git clone https://github.com/Ankit-Ransh/Recover.git ```
-2. Open flutter repository ```cd Recover/lost_found ```
-3. Install Flutter dependencies ``` flutter pub get ```
-4. Set up the Python environment ``` pip install -r requirements.txt ``` 
+In the BLoC pattern, the business logic and state management are encapsulated within BLoC classes, which are responsible for processing input events, updating the application state, and emitting output states. UI components such as widgets subscribe to the output states emitted by BLoC classes and update their presentation accordingly.
 
-### Usage
+### Implementation
 
-1. Run the Flutter application ``` flutter run ```
-2. Ensure the backend services are running ``` python app.py ```
+In this project, the `flutter_bloc` package is used to implement the BLoC pattern for state management. The `flutter_bloc` package provides utilities and abstractions for building reactive Flutter applications with BLoC. It includes `Bloc` and `BlocBuilder` classes for defining BLoC logic and building UI components, respectively.
 
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+To learn more about using BLoC for state management in Flutter, refer to the official [flutter_bloc documentation](https://bloclibrary.dev/#/).
